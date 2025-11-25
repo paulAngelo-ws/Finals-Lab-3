@@ -37,6 +37,11 @@
     margin-bottom: 3px;
 }
 
+.container .body .sideBar ul {
+    list-style-type: none;
+}
+
+
 .container .body .sideBar ul li {
     padding: 5px;
 }
@@ -143,8 +148,6 @@
     text-decoration: underline;
 }
 
-
-
 @media (max-width: 600px) {
 
     .container .body {
@@ -156,4 +159,13 @@
         display: block;
     }
 
+    .container .body .sideBar h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .container .body .sideBar ul li {
+        display: inline;
+    }
 }

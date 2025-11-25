@@ -63,7 +63,7 @@
     grid-column: 2 / span 14;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(6, auto);
     background-color: gray;
 }
 
@@ -167,5 +167,6 @@
 
     .container .body .sideBar ul li {
         display: inline;
+        text-decoration: underline;
     }
 }

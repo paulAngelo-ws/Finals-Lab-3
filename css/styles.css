@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+}
+
+.container .header {
+    padding: 10px;
+    background-color: #0c0c0c;
+    color: #f9edd8;
+}
+
+.container .header h3 {
+    font-size: 30px
+}
+
+.container .body {
+    display: grid;
+    grid-template-columns: repeat(15, auto);
+    background-color: gray;
+    grid-row: 2 / span 3;
+}
+
+.container .body .sideBar {
+    grid-column: 1;
+    background-color: #0c0c0c;
+    color: #f5f3f5;
+    text-align: center;
+    padding: 10px;
+}
+.container .body .sideBar h3 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.container .body .sideBar ul li {
+    padding: 5px;
+}
+
+.container .body .sideBar ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f5f3f5;
+}
+
+.container .body .sideBar ul li a:hover {
+    font-size: 19px;
+    text-decoration: underline;
+    background-color: crimson;
+    padding: 5px;
+}
+
+.container .body .mainContent {
+    grid-column: 2 / span 14;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: gray;
+}
+
+.container .body .mainContent .subContent1 {
+    grid-column: 1 / span 3;
+    background-color: gray;
+}
+
+.container .body .mainContent .subContent1 #content {
+    background-color: black;
+    color: #e6e6e6;
+    padding: 1.5%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container .body .mainContent .subContent1 #content h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.container .body .mainContent .subContent1 #content div {
+    text-align: center;
+}
+
+.container .body .mainContent .subContent1 #content div img {
+    max-width: 40%;
+    height: auto;
+}
+
+.container .body .mainContent .subContent1 #content p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.container .body .mainContent .subContent1 #content h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.container .body .mainContent .subContent1 #content table tr td {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.container .body .mainContent .subContent1 #content table tr td img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container .body .mainContent .subContent2 {
+    grid-column: 4 / span 3;
+    background-color: #262626;
+    color: #e7e7e7;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .body .mainContent .subContent2 h3 {
+    margin-top: 3%;
+}
+
+.container .body .mainContent .subContent2 img {
+    max-width: 85%;
+    height: auto;
+    border: 2px solid white;
+}
+
+.container .footer {
+    background-color: #280033;
+    color: white;
+    text-align: center;
+}
+
+.container .footer a, a:visited {
+    color: #f5d23b;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .container .body {
+        display: block;
+    }
+
+    .container .body .mainContent {
+        width: 100%;
+        display: block;
+    }
+
+}
